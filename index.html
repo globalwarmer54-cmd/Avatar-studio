@@ -1,0 +1,16 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+<title>Avatar Studio</title><link rel="stylesheet" href="style.css"></head><body>
+<div id="app">
+<header><b>Avatar Studio</b><span id="info">1/1</span><button id="ori">⟳</button>
+<select id="fps"><option>8</option><option selected>12</option><option>24</option></select>
+<button id="play">▶</button><button id="exp" class="pri">Export</button></header>
+<div id="stage"><canvas id="cv" width="1280" height="720"></canvas></div>
+<div id="tools">
+<button data-t="move" class="on">✥</button><button data-t="pen">✎</button><button data-t="erase">⌫</button>
+<input type="color" id="col" value="#222222"><input type="range" id="sz" min="2" max="40" value="6">
+<button id="onion" class="on">🧅</button>
+<button data-s="pose">🧍</button><button data-s="rig">🦴</button><button data-s="media">🖼</button><button data-s="audio">🎙</button><button data-s="tl">✂</button></div>
+<div id="sheet" hidden></div>
+<div id="strip"><div id="frames"></div><div class="fb"><button id="add">＋</button><button id="dup">⧉</button><button id="hold">⏩</button><button id="del">🗑</button></div></div>
+</div><script src="app.js"></script></body></html>
